@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Preference Survey</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="heading-container">
+      <h1 id="title">Travel Preference Survey</h1>
+      <p id="description">We would like to know more about your travel preferences.</p>
+    </div>
+    <div class="content-container">
+      <form id="survey-form">
+        <div class="li-group">
+          <label id="name-label">Name</label>
+          <input required id="name" type="text" placeholder="Enter name" />
+        </div>
+        <div class="li-group">
+          <label id="email-label">Email</label
+          ><input required id="email" type="email" placeholder="Enter email" />
+        </div>
+        <div class="li-group">
+          <label id="number-label">Age</label
+          ><input
+            required
+            id="number"
+            type="number"
+            min="13"
+            max="120"
+            placeholder="Enter age"
+          />
+        </div>
+        <div class="li-group">
+          <label>Which type of travel do you prefer?</label>
+          <select id="dropdown">
+            <option>Select travel type</option>
+            <option>Adventure</option>
+            <option>Beach</option>
+            <option>City</option>
+            <option>Mountain</option>
+          </select>
+        </div>
+        <div class="li-group ">
+          <p class="p-label">Would you prefer traveling alone or with a group?</p>
+          <label class="input-label"><input type="radio" name="travel-type" value="alone" />Alone</label>
+          <label class="input-label"><input type="radio" name="travel-type" value="group" />Group</label>
+        </div>
+
+        <div class="li-group select-margin">
+          <label>What is your favorite aspect of traveling?</label>
+          <select id="dropdown">
+            <option>Select an option</option>
+            <option>Exploring new cultures</option>
+            <option>Tasting local cuisine</option>
+            <option>Adventurous activities</option>
+            <option>Relaxation and rejuvenation</option>
+          </select>
+        </div>
+
+        <div class="li-group ">
+          <p class="p-label">What is your preferred mode of transportation during travel?</p>
+          <label class="input-label"><input type="checkbox" name="transportation" value="car" />Car</label>
+          <label class="input-label"><input type="checkbox" name="transportation" value="plane" />Plane</label>
+          <label class="input-label"><input type="checkbox" name="transportation" value="train" />Train</label>
+          <label class="input-label"><input type="checkbox" name="transportation" value="boat" />Boat</label>
+        </div>
+
+        <div class="li-group">
+          <label>Which country or region would you like to visit next?</label
+          ><input type="text" placeholder="Enter your preferred destination" />
+        </div>
+
+        <div class="li-group">
+          <label>Any additional comments or suggestions?</label>
+          <textarea placeholder="Enter your comment here..."></textarea>
+          <div class="li-group">
+            <button type="submit" value="Submit" id="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
